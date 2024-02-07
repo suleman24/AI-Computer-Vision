@@ -1,0 +1,9 @@
+i=imread("city.jfif");
+c=1;
+i=rgb2gray(i);
+img=im2double(i);
+img1=c*(img.^0.5);
+subplot(1,2,1);
+imshow(i);
+subplot(1,2,2);
+imshow(img1);
